@@ -9,8 +9,8 @@ import (
 )
 
 func main() {
-	// stringConexao := "golang:golang@tcp(0.0.0.0:3306)/devbook?charset=utf8&parseTime=True&loc=Local"
-	stringConexao := "root:rootpassword@tcp(0.0.0.0:3306)/devbook?charset=utf8&parseTime=True&loc=Local"
+	stringConexao := "golang:golang@tcp(0.0.0.0:3306)/devbook?charset=utf8&parseTime=True&loc=Local"
+	// stringConexao := "root:rootpassword@tcp(0.0.0.0:3306)/devbook?charset=utf8&parseTime=True&loc=Local"
 	db, erro := sql.Open("mysql", stringConexao)
 
 	if erro != nil {
